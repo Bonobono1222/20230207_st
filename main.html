@@ -8,11 +8,73 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--jquery-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="phone_afternoon">
-      <img src="./images/phone_afternoon.png" alt="폰1">
+  <div class="wrapper" id="wrapper">
+    <header>
+      <h1><a href="./main.html"><img id="logo" src="./images/logo_b.png"></a></h1>
+      <nav>
+        <li class="n_1">
+          <a href="">About</a>
+          <ul class="n_2">
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">1</a></li>
+          </ul>
+        </li>
+        <li class="n_1">
+          <a href="">Company</a>
+          <ul class="n_2">
+            <li><a href="">2</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">2</a></li>
+          </ul>
+        </li>
+        <li class="n_1">
+          <a href="">History</a>
+          <ul class="n_2">
+            <li><a href="">3</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">3</a></li>
+          </ul>
+        </li>
+        <li class="n_1">
+          <a href="">Community</a>
+          <ul class="n_2">
+            <li><a href="">4</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">4</a></li>
+          </ul>
+        </li>
+        <li class="n_1">
+          <a href="">Contact us</a>
+          <ul class="n_2">
+            <li><a href="">5</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">5</a></li>
+          </ul>
+        </li>
+      </nav>
+    </header>
+    <section>
+      <div class="lorem">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing Materials</p>
+      </div>
+    </section>
+    <div class="hand">
+      <img id="hand_1" onclick="changeImg()" src="./images/phone_morning.png" alt="morning">
+    </div>
+    <div id="clock">
+    <span onload="printClock()"></span></div>
+    <div class="btn-box">
+      <button class="btn_1" id="morning">morning</button>
+      <button class="btn_2" id="afternoon">afternoon</button>
+      <button class="btn_3" id="evening">evening</button>
+      <button class="btn_4" id="night">night</button>
     </div>
   </div>
 <script src="./js/script.js"></script>
