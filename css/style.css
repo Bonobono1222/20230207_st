@@ -130,12 +130,9 @@ a {
   background-color: rgb(46, 53, 116);
 }
 
-.lorem h1 {
-  font-size: 60px;
-}
 
 .lorem p {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .lorem {
