@@ -17,6 +17,50 @@
   overflow: hidden;
 }
 
+#wrapper > img:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .8;
+	animation: ani1 100s linear infinite;
+	z-index: 1;
+}
+
+#wrapper > img:nth-child(2) {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	opacity: .8;
+	animation: ani2 100s linear infinite;
+	z-index: 1;
+}
+
+@keyframes ani1 {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 1960px;
+		opacity: 0;
+	}
+	60% {
+		left: -1840px;
+		opacity: 0.8;
+	}
+	100%{
+		left: 0;
+	}
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -39,6 +83,7 @@ nav {
   position: absolute;
   top: 50px;
   right: 80px;
+  z-index: 3;
 }
 
 li {
@@ -47,6 +92,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+#b_w {
+  color: #000;
 }
 
 .n_1 {
@@ -69,11 +118,6 @@ a {
   width: 100px;
   text-align: center;
   display: none;
-}
-
-.n_1:hover {
-  color: rgb(0, 132, 255);
-  scale: 1.5;
 }
 
 .n_1:hover .n_2 {
@@ -99,6 +143,7 @@ a {
   position: absolute;
   top: 300px;
   left: 110px;
+  z-index: 2;
 }
 
 .hand {
@@ -108,20 +153,82 @@ a {
   right: 0;
   width: 1000px;
   overflow: hidden;
+  z-index: 2;
 }
 
-#clock {
-  width: 400px;
-  height: 250px;
+#clock-img {
+  width: 540px;
+  height: 310px;
   font-size: 50px;
   text-align: center;
   padding-top: 110px;
   color: #000000;
   position: absolute;
-  top: 250px;
-  right: 400px;
+  top: 280px;
+  right: 320px;
+  z-index: 3;
+  overflow: hidden;
 }
 
+#clock-img > img:nth-child(1) {
+	z-index: 3;
+  position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .8;
+	animation: ani1 100s linear infinite;
+	
+} 
+
+#clock-img > img:nth-child(2) {
+	z-index: 3;
+  position: absolute;
+	top: 20px;
+	left: 0;
+	opacity: .8;
+	animation: ani2 100s linear infinite;
+}
+
+@keyframes ani1 {
+	0% {
+		left: -100vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 1960px;
+		opacity: 0;
+	}
+	60% {
+		left: -1840px;
+		opacity: 0.8;
+	}
+	100%{
+		left: 0;
+	}
+}
+
+
+#clock {
+  width: 350px;
+  height: 330px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 110px;
+  color: #000000;
+  position: absolute;
+  top: 260px;
+  right: 430px;
+  z-index: 4;
+}
+ 
 .btn-box {
   display: flex;
   justify-content: center;
@@ -131,34 +238,48 @@ a {
   bottom: 50px;
   right: 0;
   left: 0;
+  z-index: 3;
 }
 
 .btn_1, .btn_2, .btn_3, .btn_4 {
-  width: 300px;
-  height: 50px;
-  background-color:#ffffff81;
-  border: none;
-  margin-right: 5px;
-  padding: 10;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-}
+    display: inline-block;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.3em;
+    color: #000000;
+    border-radius: 0;
+    padding: 18px 80px 20px;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(106, 133, 223, 0.8), rgba(52, 54, 146, 0.8), rgba(34,34,34,0), rgba(34,34,34,0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    text-decoration: none;
+    margin: 0.625rem;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
 .btn_1:hover {
-  background-color: rgb(46, 53, 116);
   color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  background-position: 99% 50%;
 }
 .btn_2:hover {
-  background-color: rgb(46, 53, 116);
-  color: 
-  #fff;
-}
-.btn_3:hover {
-  background-color: rgb(46, 53, 116);
   color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  background-position: 99% 50%;
+}
+
+.btn_3:hover {
+  color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  background-position: 99% 50%;
 }
 .btn_4:hover {
-  background-color: rgb(46, 53, 116);
   color: #fff;
+  border: 1px solid rgba(223,190,106,0);
+  background-position: 99% 50%;
 }

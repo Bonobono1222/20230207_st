@@ -8,6 +8,20 @@ btn1.addEventListener('click', function changeImg() {
   document.getElementById("wrapper").style.backgroundImage = "url('../images/bg_morning.jpg')";
   document.querySelector(".lorem").style.color = 'black';
   document.getElementById("logo").src = "../images/logo_b.png";
+  document.getElementById("clock").style.color = 'black';
+  document.getElementById("b_w0").style.color = '';
+  document.getElementById("b_w1").style.color = '';
+  document.getElementById("b_w2").style.color = '';
+  document.getElementById("b_w3").style.color = '';
+  document.getElementById("b_w4").style.color = '';
+  document.querySelector('.btn_1').style.backgroundColor = 'white';
+  document.querySelector('.btn_1').style.color = 'black';
+  document.querySelector('.btn_2').style.backgroundColor = '';
+  document.querySelector('.btn_2').style.color = '';
+  document.querySelector('.btn_3').style.backgroundColor = '';
+  document.querySelector('.btn_3').style.color = '';
+  document.querySelector('.btn_4').style.backgroundColor = '';
+  document.querySelector('.btn_4').style.color = '';
 })
 
 btn2.addEventListener('click', function changeImg() {
@@ -15,14 +29,41 @@ btn2.addEventListener('click', function changeImg() {
   document.getElementById("wrapper").style.backgroundImage = "url('../images/bg_afternoon.jpg')";
   document.querySelector(".lorem").style.color = 'black';
   document.getElementById("logo").src = "../images/logo_b.png";
-}
-)
+  document.getElementById("clock").style.color = 'black';
+  document.getElementById("b_w0").style.color = '';
+  document.getElementById("b_w1").style.color = '';
+  document.getElementById("b_w2").style.color = '';
+  document.getElementById("b_w3").style.color = '';
+  document.getElementById("b_w4").style.color = '';
+  document.querySelector('.btn_1').style.backgroundColor = '';
+  document.querySelector('.btn_1').style.color = '';
+  document.querySelector('.btn_2').style.backgroundColor = 'white';
+  document.querySelector('.btn_2').style.color = 'black';
+  document.querySelector('.btn_3').style.backgroundColor = '';
+  document.querySelector('.btn_3').style.color = '';
+  document.querySelector('.btn_4').style.backgroundColor = '';
+  document.querySelector('.btn_4').style.color = '';
+})
 
 btn3.addEventListener('click', function changeImg() {
   document.getElementById("hand_1").src = "../images/phone_evening.png";
   document.getElementById("wrapper").style.backgroundImage = "url('../images/bg_evening.jpg')";
   document.querySelector(".lorem").style.color = 'black';
   document.getElementById("logo").src = "../images/logo_b.png";
+  document.getElementById("clock").style.color = 'black';
+  document.getElementById("b_w0").style.color = '';
+  document.getElementById("b_w1").style.color = '';
+  document.getElementById("b_w2").style.color = '';
+  document.getElementById("b_w3").style.color = '';
+  document.getElementById("b_w4").style.color = '';
+  document.querySelector('.btn_1').style.backgroundColor = '';
+  document.querySelector('.btn_1').style.color = '';
+  document.querySelector('.btn_2').style.backgroundColor = '';
+  document.querySelector('.btn_2').style.color = '';
+  document.querySelector('.btn_3').style.backgroundColor = 'white';
+  document.querySelector('.btn_3').style.color = 'black';
+  document.querySelector('.btn_4').style.backgroundColor = '';
+  document.querySelector('.btn_4').style.color = '';
 })
 
 btn4.addEventListener('click', function changeImg() {
@@ -30,6 +71,21 @@ btn4.addEventListener('click', function changeImg() {
   document.getElementById("wrapper").style.backgroundImage = "url('../images/bg_night.jpg')";
   document.querySelector(".lorem").style.color = 'white';
   document.getElementById("logo").src = "../images/logo_w.png";
+  document.getElementById("clock").style.color = 'white';
+  document.getElementById("b_w0").style.color = 'white';
+  document.getElementById("b_w1").style.color = 'white';
+  document.getElementById("b_w2").style.color = 'white';
+  document.getElementById("b_w3").style.color = 'white';
+  document.getElementById("b_w4").style.color = 'white';
+  document.querySelector('.btn_1').style.backgroundColor = '';
+  document.querySelector('.btn_1').style.color = '';
+  document.querySelector('.btn_2').style.backgroundColor = '';
+  document.querySelector('.btn_2').style.color = '';
+  document.querySelector('.btn_3').style.backgroundColor = '';
+  document.querySelector('.btn_3').style.color = '';
+  document.querySelector('.btn_4').style.backgroundColor = 'white';
+  document.querySelector('.btn_4').style.color = 'black';
+
 })
 
 var clockTarget = document.getElementById("clock");
@@ -60,9 +116,7 @@ function clock() {
     var seconds = date.getSeconds();
 
     // 초까지 받아온후 
-    clockTarget .innerText = `${month+1}월 ${clockDate}일 ${week[day]}요일` +
-
-    `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }:${seconds < 10 ? `0${seconds }`  : seconds }`;
+    clockTarget .innerText = `${month+1}월 ${clockDate}일 ${week[day]}요일` + `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes }`  : minutes }:${seconds < 10 ? `0${seconds }`  : seconds }`;
 
     // 월은 0부터 1월이기때문에 +1일을 해주고 
 
